@@ -19,5 +19,6 @@ public class Broadcast implements CommandExecutor {
         }
 
         return true;
+
     }
 }
