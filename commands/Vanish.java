@@ -44,6 +44,8 @@ public class Vanish implements CommandExecutor {
                 DXPlug.invisiblePlayers.add(player);
                 Msg.send(sender, "&b[/] | You have vanished and no server player are able to see you");
             }
+        } else {
+            Msg.send(sender, "&c[!] | A console are unable to toggle vanish for anyone including the console itself.");
         }
 
         return true;

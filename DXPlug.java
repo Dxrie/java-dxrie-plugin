@@ -35,6 +35,7 @@ public final class DXPlug extends JavaPlugin {
         getCommand("switch").setExecutor(new GMSWITCH());
         getCommand("invis").setExecutor(new Invisible());
         getCommand("vanish").setExecutor(new Vanish(this));
+        getCommand("broadcast").setExecutor(new Broadcast());
     }
 
     @Override
