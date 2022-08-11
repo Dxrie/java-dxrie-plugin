@@ -2,6 +2,7 @@ package dxplug.dxplug;
 
 import dxplug.dxplug.commands.*;
 import dxplug.dxplug.handler.ServerHandler;
+import dxplug.dxplug.handler.ShearsHandler;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -16,6 +17,7 @@ public final class DXPlug extends JavaPlugin {
         Bukkit.getLogger().info("[=====================================================]");
 
         new ServerHandler(this);
+        new ShearsHandler(this);
 
         getCommand("heal").setExecutor(new Heal());
         getCommand("fly").setExecutor(new Fly());
