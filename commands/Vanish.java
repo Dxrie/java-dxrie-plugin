@@ -28,7 +28,7 @@ public class Vanish implements CommandExecutor {
             if (DXPlug.invisiblePlayers.contains(player)) {
                 for (Player people : Bukkit.getOnlinePlayers()) {
                     people.showPlayer(plugin, player);
-                    Msg.send(people, ChatColor.AQUA + "[ :) ] | Welcome " + player.getName() + " to " + Bukkit.getServer().getName() + ".");
+                    Msg.send(people, "§b[ :) ] | " + player.getName() + " has joined the server.");
                 }
 
                 DXPlug.invisiblePlayers.remove(player);
@@ -38,7 +38,7 @@ public class Vanish implements CommandExecutor {
                     if (!(people.isOp())) {
                         people.hidePlayer(plugin, player);
                     }
-                    Msg.send(people, ChatColor.DARK_AQUA + "[ :( ] | " + player.getName() + " Has left the server.");
+                    Msg.send(people, "§3[ :( ] | " + player.getName() + " has left the server.");
                 }
 
                 DXPlug.invisiblePlayers.add(player);

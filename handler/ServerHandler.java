@@ -30,7 +30,7 @@ public class ServerHandler implements Listener {
             player.hidePlayer(plugin, DXPlug.invisiblePlayers.get(i));
         }
 
-        event.setJoinMessage(ChatColor.AQUA + "[ :) ] | Welcome " + player.getName() + " to " + Bukkit.getServer().getName() + ".");
+        event.setJoinMessage("§b[ :) ] | " + player.getName() + " has joined the server.");
     }
 
     @EventHandler
@@ -41,6 +41,6 @@ public class ServerHandler implements Listener {
             player.showPlayer(plugin, DXPlug.invisiblePlayers.get(i));
         }
 
-        event.setQuitMessage(ChatColor.DARK_AQUA + "[ :( ] | " + player.getName() + " Has left the server.");
+        event.setQuitMessage("§3[ :( ] | " + player.getName() + " has left the server.");
     }
 }
